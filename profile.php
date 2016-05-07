@@ -8,7 +8,7 @@ include 'sqlv1.php';
 protect_page();
 
 include'includes/overall/header.php';
-if(isset($_GET['username'])===true&&empty($_GET['username'])===false){
+if(isset($_GET['username'])===true&&empty($_GET['username'])==false){
 	$username=$_GET['username'];
 	if(user_exists($username) == 1){
 				$user_id=user_id_from_username($username);
